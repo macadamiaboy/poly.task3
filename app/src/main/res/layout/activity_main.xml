@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:layout_marginBottom="@dimen/layout_margin_bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="@string/tetris"
+            android:textStyle="bold"
+            android:textSize="76sp"/>
+        <TextView
+            android:id="@+id/tv_high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/default_highscore"
+            android:textSize="26sp"/>
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_new_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_game"
+                android:textSize="26sp"/>
+            <Button
+                android:id="@+id/btn_reset_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_score"
+                android:textSize="26sp"/>
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exit"
+                android:textSize="26sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
